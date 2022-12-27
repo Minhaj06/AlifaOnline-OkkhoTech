@@ -1,0 +1,61 @@
+/* Home Banner CSS Starts Here */
+.banner-img-md {
+  grid-area: grid-img-md;
+}
+
+.banner-img-sm-1 {
+  grid-area: grid-img-sm-1;
+}
+
+.banner-img-sm-2 {
+  grid-area: grid-img-sm-2;
+}
+
+.banner-img-lg {
+  grid-area: grid-img-lg;
+}
+
+.home-banner-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "grid-img-md grid-img-md grid-img-lg grid-img-lg"
+    "grid-img-sm-1 grid-img-sm-2 grid-img-lg grid-img-lg";
+  gap: 1.5rem;
+}
+
+.home-banner-grid > div {
+  background-color: var(--black);
+  padding: 8rem 3rem 3rem 3rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  border-radius: 1rem;
+  display: flex;
+  align-items: flex-end;
+}
+/* Home Banner CSS Ends Here */
+
+/* Product List Section CSS Starts Here */
+.product-list-menu li {
+  display: inline-block;
+  padding: 0.8rem 3rem;
+  margin: 0 1rem;
+  background-color: var(--light-color);
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+}
+
+.product-list-menu li:hover {
+  background-color: var(--brand-color) !important;
+  color: var(--white);
+}
+
+.product-list-menu li.active {
+  background-color: var(--brand-color) !important;
+  color: var(--white);
+}
+/* Product List Section CSS Ends Here */

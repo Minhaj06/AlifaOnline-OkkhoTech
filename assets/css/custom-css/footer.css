@@ -1,0 +1,7 @@
+.footer ul .nav-item .nav-link {
+  color: var(--white);
+  padding: 0;
+}
+.footer ul .nav-item .nav-link:hover {
+  text-decoration: underline;
+}

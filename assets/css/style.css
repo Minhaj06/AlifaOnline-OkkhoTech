@@ -59,3 +59,20 @@
   color: var(--white);
 }
 /* Product List Section CSS Ends Here */
+
+/* Subscribe Section CSS Starts Here */
+.subscribe-area {
+  background-image: url(../../images/subscribe-banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  margin-bottom: 5rem;
+  border-radius: 2rem;
+
+  min-height: 45rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Subscribe Section CSS Ends Here */

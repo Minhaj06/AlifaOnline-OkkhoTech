@@ -21,11 +21,10 @@ $(".filter-menu").on("click", "li", function () {
   $grid.isotope({ filter: filterValue });
 });
 
-// Initialize Swiper
-const swiper = new Swiper(".swiper", {
-  // slidesPerView: 4,
+// Popular Product Slider
+const popularProductSwiper = new Swiper(".popular-product-swiper", {
   loop: true,
-  spaceBetween: 20,
+  spaceBetween: 10,
   breakpoints: {
     576: {
       slidesPerView: 2,
@@ -37,25 +36,33 @@ const swiper = new Swiper(".swiper", {
       slidesPerView: 4,
     },
   },
-  // direction: getDirection(),
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".popular-product .swiper-button-next",
+    prevEl: ".popular-product .swiper-button-prev",
+  },
+});
+
+// Featured Categories Slider
+const featuredCategoriesSwiper = new Swiper(".featured-categories-swiper", {
+  loop: true,
+  spaceBetween: 10,
+  breakpoints: {
+    576: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 4,
+    },
+  },
+  navigation: {
+    nextEl: ".featured-categories .swiper-button-next",
+    prevEl: ".featured-categories .swiper-button-prev",
   },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
-  // on: {
-  //   resize: function () {
-  //     swiper.changeDirection(getDirection());
-  //   },
-  // },
 });
-
-// function getDirection() {
-//   const windowWidth = window.innerWidth;
-//   const direction = window.innerWidth <= 760 ? "vertical" : "horizontal";
-
-//   return direction;
-// }

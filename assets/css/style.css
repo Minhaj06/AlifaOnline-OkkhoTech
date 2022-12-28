@@ -61,27 +61,27 @@
 /* Product List Section CSS Ends Here */
 
 /* Popular Product Section CSS Starts Here */
-.popular-product .position-relative .swiper {
+.products-slider .position-relative .swiper {
   margin: 0 4rem;
 }
 
-.popular-product .position-relative .swiper-button-next,
-.popular-product .position-relative .swiper-button-prev {
+.products-slider .position-relative .swiper-button-next,
+.products-slider .position-relative .swiper-button-prev {
   top: 35%;
 }
 
-.popular-product .position-relative .swiper-button-next,
-.popular-product .position-relative .swiper-rtl .swiper-button-prev {
+.products-slider .position-relative .swiper-button-next,
+.products-slider .position-relative .swiper-rtl .swiper-button-prev {
   right: 0.25rem;
 }
 
-.popular-product .position-relative .swiper-button-prev,
-.popular-product .position-relative .swiper-rtl .swiper-button-next {
+.products-slider .position-relative .swiper-button-prev,
+.products-slider .position-relative .swiper-rtl .swiper-button-next {
   left: 0.25rem;
 }
 
-.popular-product .position-relative .swiper-button-next:after,
-.popular-product .position-relative .swiper-button-prev:after {
+.products-slider .position-relative .swiper-button-next:after,
+.products-slider .position-relative .swiper-button-prev:after {
   font-size: 1.8rem;
   font-weight: 600;
   color: var(--brand-color);
@@ -103,6 +103,47 @@
   background-color: var(--brand-color);
 }
 /* Popular Product Section CSS Ends Here */
+
+/* Featured Categories Section CSS Starts Here */
+.featured-card {
+  transition: 0.3s;
+}
+
+.featured-card:hover {
+  transform: scale(1.03);
+  z-index: 1;
+}
+
+.featured-card img {
+  border-radius: 1rem;
+}
+
+.swiper-pagination-bullet {
+  width: 1.3rem;
+  height: 1.3rem;
+  background-color: var(--brand-color);
+}
+
+.featured-card-name {
+  position: absolute;
+  left: 0;
+  bottom: 2rem;
+  width: 100%;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 1.6rem;
+  font-weight: 400;
+  background-color: var(--text-color-dark);
+  color: var(--white);
+  padding: 0.4rem;
+  opacity: 0.8;
+}
+
+.featured-categories.products-slider .position-relative .swiper-button-next,
+.featured-categories.products-slider .position-relative .swiper-button-prev {
+  top: 45%;
+}
+/* Featured Categories Section CSS Ends Here */
 
 /* Subscribe Section CSS Starts Here */
 .subscribe-area {

@@ -97,7 +97,7 @@
     </div>
 
     <!-- menubar -->
-    <nav class="menubar">
+    <nav class="menubar d-none d-lg-block">
       <div class="container">
         <div class="d-flex justify-content-between align-items-center">
           <div class="menubar-left">
@@ -134,6 +134,174 @@
     </nav>
   </header>
   <!-- Header Ends Here -->
+
+
+  <!-- Tablet, Mobile Menu Start Here -->
+  <div class="d-lg-none">
+    <div class="body-wrapper-freeze"></div>
+
+    <!-- Side Menu -->
+    <div class="sidebar text-capitalize">
+
+      <div class="tab-mobile-menu-buttons mb-4">
+        <!-- Nav Pills -->
+        <ul class="nav nav-pills row g-3" role="tablist">
+          <li class="nav-item col-6" role="presentation">
+            <a class="nav-link mb-2 active" data-bs-toggle="tab" href="#menuTab" aria-selected="true" role="tab">
+              <i class="fa-solid fa-bars"></i>
+              MENU
+            </a>
+          </li>
+          <li class="nav-item col-6" role="presentation">
+            <a class="nav-link mb-2" data-bs-toggle="tab" href="#catTab" aria-selected="false" role="tab" tabindex="-1">
+              <i class="fa-solid fa-table-cells-large"></i>
+              categories
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+      <!-- Nav Tabs -->
+      <div class="sidebar-content">
+        <div class="tab-content mt-2 mb-4">
+          <div id="menuTab" class="tab-pane active show" role="tabpanel">
+            <h3 class="pb-4 border-bottom text-center brand-color font-weight-500 mb-4">Main Menu</h3>
+
+            <ul class="sidebar-content-item">
+              <li class="nav-item">
+                <a href="">home</a>
+              </li>
+              <li class="nav-item">
+                <a href="">about</a>
+              </li>
+              <li class="nav-item">
+                <a href="">shop</a>
+              </li>
+              <li class="nav-item">
+                <a href="">vendors</a>
+              </li>
+              <li class="nav-item">
+                <a href="">contact us</a>
+              </li>
+              <li class="nav-item">
+                <a href="">Faq</a>
+              </li>
+            </ul>
+
+          </div>
+
+          <div id="catTab" class="tab-pane" role="tabpanel">
+            <h3 class="pb-4 border-bottom text-center brand-color font-weight-500 mb-4">Categories</h3>
+
+
+            <ul class="side-menu-categories">
+
+              <li class="nav-item"><a href="" class="">tablet</a></li>
+
+              <div class="dropdown">
+                <li class="dropdown-toggle" id="laptopCat" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a href="">Laptop</a>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </li>
+                <ul class="dropdown-menu w-100" aria-labelledby="laptopCat">
+                  <li><a class="dropdown-item" href="#">Lenovo</a></li>
+                  <li><a class="dropdown-item" href="#">HP</a></li>
+                  <li><a class="dropdown-item" href="#">Asus</a></li>
+                </ul>
+              </div>
+
+              <div class="dropdown">
+                <li class="dropdown-toggle" id="desktopCat" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a href="">desktop</a>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </li>
+                <ul class="dropdown-menu w-100" aria-labelledby="desktopCat">
+                  <li><a class="dropdown-item" href="#">RAM</a></li>
+                  <li><a class="dropdown-item" href="#">ROM</a></li>
+                  <li><a class="dropdown-item" href="#">SSD</a></li>
+                </ul>
+              </div>
+
+              <div class="dropdown">
+                <li class="dropdown-toggle" id="mobileCat" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a href="">mobile</a>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </li>
+                <ul class="dropdown-menu w-100" aria-labelledby="mobileCat">
+                  <li><a class="dropdown-item" href="#">iPhone</a></li>
+                  <li><a class="dropdown-item" href="#">Realme</a></li>
+                  <li><a class="dropdown-item" href="#">Samsung</a></li>
+                  <li><a class="dropdown-item" href="#">Redmi</a></li>
+                  <li><a class="dropdown-item" href="#">Nokia</a></li>
+                </ul>
+              </div>
+
+              <li class="nav-item"><a href="" class="">Monitor</a></li>
+              <li class="nav-item"><a href="" class="">UPS</a></li>
+              <li class="nav-item"><a href="" class="">Office equipment</a></li>
+              <li class="nav-item"><a href="" class="">Camera</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- Bottom Menu -->
+    <div class="bottom-menu py-4 bg-white position-fixed bottom-0 start-0 w-100 border-top">
+      <div class="container">
+        <ul class="d-flex justify-content-around align-items-center">
+          <li class="nav-item">
+            <a href="index.html"><i class="fa-solid fa-house-chimney-window"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="shop.html"><i class="fa-solid fa-shop"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="" data-bs-toggle="modal" data-bs-target="#searchModal"><i
+                class="fa-solid fa-magnifying-glass"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="details.html"><i class="fa-regular fa-user"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Search Modal -->
+    <div class="modal fade p-0" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content py-5 rounded-0">
+
+          <div class="text-end px-5">
+            <span class="fs-1" role="button" data-bs-dismiss="modal">
+              <i class="fa-solid fa-xmark"></i>
+            </span>
+          </div>
+
+          <div class="modal-body text-center p-4 py-5 p-sm-5">
+
+            <h1 class="text-color-dark text-capitalize font-weight-500 mb-5">Search For Products</h1>
+
+            <form action="" class="search-form">
+              <div class="input-group">
+                <input type="search" class="form-control fs-3 px-4 py-2" placeholder="Search For Products"
+                  aria-describedby="basic-addon2">
+                <span class="input-group-text fs-3 bg-brand text-white" id="basic-addon2">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- Tablet, Mobile Menu End Here -->
 
 
   <!-- Main Contents Start Here -->
@@ -237,7 +405,7 @@
 
             <div class="col-lg-12 mb-5">
               <div class="row g-4 gx-xxl-5 grid">
-                <div class="col-4 col-xl-3">
+                <div class="col-6 col-md-4 col-xl-3">
                   <div class="product-card">
 
                     <div class="product-img">
@@ -282,7 +450,7 @@
                   </div>
                 </div>
 
-                <div class="col-4 col-xl-3">
+                <div class="col-6 col-md-4 col-xl-3">
                   <div class="product-card">
 
                     <div class="product-img">
@@ -327,7 +495,7 @@
                   </div>
                 </div>
 
-                <div class="col-4 col-xl-3 head-phone">
+                <div class="col-6 col-md-4 col-xl-3 head-phone">
                   <div class="product-card">
 
                     <div class="product-img">
@@ -372,7 +540,7 @@
                   </div>
                 </div>
 
-                <div class="col-4 col-xl-3 powerbank">
+                <div class="col-6 col-md-4 col-xl-3 powerbank">
                   <div class="product-card">
                     <div class="product-img">
                       <img src="images/product-4.png" alt="">
@@ -415,7 +583,7 @@
                   </div>
                 </div>
 
-                <div class="col-4 col-xl-3 powerbank">
+                <div class="col-6 col-md-4 col-xl-3 powerbank">
                   <div class="product-card">
                     <div class="product-img">
                       <img src="images/product-5.png" alt="">
@@ -458,7 +626,7 @@
                   </div>
                 </div>
 
-                <div class="col-4 col-xl-3">
+                <div class="col-6 col-md-4 col-xl-3">
                   <div class="product-card">
                     <div class="product-img">
                       <img src="images/product-6.png" alt="">
@@ -501,7 +669,7 @@
                   </div>
                 </div>
 
-                <div class="col-4 col-xl-3 mobile-phone">
+                <div class="col-6 col-md-4 col-xl-3 mobile-phone">
                   <div class="product-card">
                     <div class="product-img">
                       <img src="images/product-7.png" alt="">
@@ -544,7 +712,7 @@
                   </div>
                 </div>
 
-                <div class="col-4 col-xl-3 head-phone">
+                <div class="col-6 col-md-4 col-xl-3 head-phone">
                   <div class="product-card">
                     <div class="product-img">
                       <img src="images/product-8.png" alt="">
@@ -995,28 +1163,28 @@
 
                     <div class="swiper-slide featured-card">
                       <a href="" class="d-block w-100 h-100 position-relative overflow-hidden">
-                        <img src="images/featured-card-1.png" alt="" class="img-fluid">
+                        <img src="images/featured-card-1.png" alt="">
                         <h3 class="featured-card-name">phone cover</h3>
                       </a>
                     </div>
 
                     <div class="swiper-slide featured-card">
                       <a href="" class="d-block w-100 h-100 position-relative overflow-hidden">
-                        <img src="images/featured-card-2.png" alt="" class="img-fluid">
+                        <img src="images/featured-card-2.png" alt="">
                         <h3 class="featured-card-name">phone cover</h3>
                       </a>
                     </div>
 
                     <div class="swiper-slide featured-card">
                       <a href="" class="d-block w-100 h-100 position-relative overflow-hidden">
-                        <img src="images/featured-card-3.png" alt="" class="img-fluid">
+                        <img src="images/featured-card-3.png" alt="">
                         <h3 class="featured-card-name">phone cover</h3>
                       </a>
                     </div>
 
                     <div class="swiper-slide featured-card">
                       <a href="" class="d-block w-100 h-100 position-relative overflow-hidden">
-                        <img src="images/featured-card-4.png" alt="" class="img-fluid">
+                        <img src="images/featured-card-4.png" alt="">
                         <h3 class="featured-card-name">phone cover</h3>
                       </a>
                     </div>
@@ -1052,7 +1220,7 @@
             <div class="col-lg-12">
               <div class="row g-4 gx-xxl-5">
 
-                <div class="col-4 col-xl-3">
+                <div class="col-6 col-md-4 col-xl-3">
                   <div class="product-card">
                     <div class="product-img">
                       <img src="images/bluetooth-headphone-1.png" alt="">
@@ -1095,7 +1263,7 @@
                   </div>
                 </div>
 
-                <div class="col-4 col-xl-3">
+                <div class="col-6 col-md-4 col-xl-3">
                   <div class="product-card">
                     <div class="product-img">
                       <img src="images/bluetooth-headphone-2.png" alt="">
@@ -1138,7 +1306,7 @@
                   </div>
                 </div>
 
-                <div class="col-4 col-xl-3">
+                <div class="col-6 col-md-4 col-xl-3">
                   <div class="product-card">
                     <div class="product-img">
                       <img src="images/bluetooth-headphone-3.png" alt="">
@@ -1181,7 +1349,7 @@
                   </div>
                 </div>
 
-                <div class="col-4 col-xl-3">
+                <div class="col-6 col-md-4 col-xl-3">
                   <div class="product-card">
                     <div class="product-img">
                       <img src="images/bluetooth-headphone-4.png" alt="">
@@ -1234,9 +1402,211 @@
     <!-- Specific Category Product Section Ends Here -->
 
 
+    <!-- Popular Brands Section Starts Here -->
+    <section class="featured-categories products-slider">
+      <div class="container">
+        <div class="inner-featured-categories">
+          <div class="row">
+
+            <div class="col-lg-12 text-center mb-5">
+              <h1 class="sec-title">popular brand</h1>
+            </div>
+
+            <div class="col-lg-12">
+              <div class="row gx-4 gy-2 justify-content-center">
+                <div class="col-4 col-md-3 col-lg">
+                  <div class="brand-logo h-100">
+                    <img class="w-100 h-auto" src="images/brand-1.png" alt="Brand Logo">
+                  </div>
+                </div>
+                <div class="col-4 col-md-3 col-lg">
+                  <div class="brand-logo h-100">
+                    <img class="w-100 h-auto" src="images/brand-2.png" alt="Brand Logo">
+                  </div>
+                </div>
+                <div class="col-4 col-md-3 col-lg">
+                  <div class="brand-logo h-100">
+                    <img class="w-100 h-auto" src="images/brand-3.png" alt="Brand Logo">
+                  </div>
+                </div>
+                <div class="col-4 col-md-3 col-lg">
+                  <div class="brand-logo h-100">
+                    <img class="w-100 h-auto" src="images/brand-4.png" alt="Brand Logo">
+                  </div>
+                </div>
+                <div class="col-4 col-md-3 col-lg">
+                  <div class="brand-logo h-100">
+                    <img class="w-100 h-auto" src="images/brand-5.png" alt="Brand Logo">
+                  </div>
+                </div>
+                <div class="col-4 col-md-3 col-lg">
+                  <div class="brand-logo h-100">
+                    <img class="w-100 h-auto" src="images/brand-6.png" alt="Brand Logo">
+                  </div>
+                </div>
+                <div class="col-4 col-md-3 col-lg">
+                  <div class="brand-logo h-100">
+                    <img class="w-100 h-auto" src="images/brand-7.png" alt="Brand Logo">
+                  </div>
+                </div>
+                <div class="col-4 col-md-3 col-lg">
+                  <div class="brand-logo h-100">
+                    <img class="w-100 h-auto" src="images/brand-8.png" alt="Brand Logo">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Popular Brands Section Ends Here -->
+
+
+    <!-- Testimonial Section Starts Here -->
+    <section class="testimonial">
+      <div class="container">
+        <div class="inner-testimonial text-capitalize text-center">
+          <div class="row g-5 g-lg-4">
+            <div class="col-lg-6">
+              <div class="testimonial-speech">
+                <h1 class="fs-35 fw-500 text-color-dark mb-5">what they say about us</h1>
+
+                <!-- Swiper -->
+                <div class="position-relative pb-5">
+                  <div class="swiper testimonial-speech-swiper" style="margin: 0 5rem">
+                    <div class="swiper-wrapper">
+
+                      <div class="swiper-slide testimonial-card mb-4">
+                        <img class="mb-5" src="images/reviewer-img.png" alt="Reviewer Image">
+
+                        <p class="review-speech lh-base mb-5">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa risus sed tempus in praesent.
+                          In cum convallis faucibus
+                          gravida id mollis dui. Pretium elit facilisi elit magnis. Et diam duis tortor tellus.
+                        </p>
+
+                        <div class="d-flex justify-content-center align-items-center">
+                          <p class="text-color-black fw-500 me-3">masud parvej -</p>
+                          <div class="stars fs-5">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star not-given"></i>
+                            <span class="text-color">(4.0)</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide testimonial-card mb-4">
+                        <img class="mb-5" src="images/reviewer-img.png" alt="Reviewer Image">
+
+                        <p class="review-speech lh-base mb-5">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa risus sed tempus in praesent.
+                          In cum convallis faucibus
+                          gravida id mollis dui. Pretium elit facilisi elit magnis. Et diam duis tortor tellus.
+                        </p>
+
+                        <div class="d-flex justify-content-center align-items-center">
+                          <p class="text-color-black fw-500 me-3">masud parvej -</p>
+                          <div class="stars fs-5">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star not-given"></i>
+                            <span class="text-color">(4.0)</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide testimonial-card mb-4">
+                        <img class="mb-5" src="images/reviewer-img.png" alt="Reviewer Image">
+
+                        <p class="review-speech lh-base mb-5">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa risus sed tempus in praesent.
+                          In cum convallis faucibus
+                          gravida id mollis dui. Pretium elit facilisi elit magnis. Et diam duis tortor tellus.
+                        </p>
+
+                        <div class="d-flex justify-content-center align-items-center">
+                          <p class="text-color-black fw-500 me-3">masud parvej -</p>
+                          <div class="stars fs-5">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star not-given"></i>
+                            <span class="text-color">(4.0)</span>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-pagination bottom-0"></div>
+                </div>
+
+              </div>
+            </div g-5 g-lg-4>
+
+            <div class="col-lg-6 position-relative">
+              <div class="row g-4">
+                <div class="col-6 col-sm-4 col-lg-6 col-xl-4">
+                  <div class="product-gallery-img h-100">
+                    <img class="w-100 h-100" src="images/product-gallery-img-1.png" alt="Product Gallery Image">
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-6 col-xl-4">
+                  <div class="product-gallery-img h-100">
+                    <img class="w-100 h-100" src="images/product-gallery-img-2.png" alt="Product Gallery Image">
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-6 col-xl-4">
+                  <div class="product-gallery-img h-100">
+                    <img class="w-100 h-100" src="images/product-gallery-img-3.png" alt="Product Gallery Image">
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-6 col-xl-4">
+                  <div class="product-gallery-img h-100">
+                    <img class="w-100 h-100" src="images/product-gallery-img-4.png" alt="Product Gallery Image">
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-6 col-xl-4">
+                  <div class="product-gallery-img h-100">
+                    <img class="w-100 h-100" src="images/product-gallery-img-6.png" alt="Product Gallery Image">
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-6 col-xl-4">
+                  <div class="product-gallery-img h-100">
+                    <img class="w-100 h-100" src="images/product-gallery-img-6.png" alt="Product Gallery Image">
+                  </div>
+                </div>
+              </div>
+              <div
+                class="position-absolute top-50 start-50 translate-middle bg-white px-4 px-xxl-5 py-5 rounded-5 w-50">
+                <h2 class="fw-500 mb-4">instagram</h2>
+                <h5 class="text-color-black fw-500 mb-4">@alifa-online</h5>
+                <p class="fs-5 lh-base">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa risus sed tempus in praesent. In cum
+                  convallis faucibus
+                  gravida id mollis dui. Pretium elit facilisi elit magnis. Et diam duis tortor tellus.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonial Section Ends Here -->
+
+
     <!-- Subscribe Section Starts Here -->
     <section class="subscribe-area container">
-      <div class="d-flex justify-content-center align-items-center">
+      <div class="d-flex justify-content-center align-items-center p-4">
         <div class="text-capitalize">
           <h1 class="text-color-dark fs-35 fw-normal lh-lg">do you sign up?</h1>
 
@@ -1247,10 +1617,10 @@
               <div
                 class="d-inline-block d-flex align-items-center gap-3 text-color bg-white border-0 px-4 py-3 rounded-3">
                 <i class="fa-regular fa-paper-plane"></i>
-                <input class="border-0 py-1" type="email" name="" id="" style="width: 32rem; max-width: 32rem;"
-                  placeholder="Your email address..." required="">
+                <input class="border-0 py-1 email-input" type="email" name="" id=""
+                  style="width: 32rem; max-width: 32rem;" placeholder="Your email address..." required="">
               </div>
-              <input type="submit" value="subscribe" class="btn button rounded-4 px-5">
+              <input type="submit" value="subscribe" class="btn button rounded-4 px-sm-5">
             </div>
           </form>
 
@@ -1289,8 +1659,186 @@
   </main>
   <!-- Main Contents End Here -->
 
-  <!-- Footer Starts Here -->
 
+  <!-- Footer Starts Here -->
+  <footer class="footer mt-5 pt-4">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-12 py-5 border-top border-bottom">
+          <div class="row g-5 text-capitalize">
+
+            <div class="col-6 col-sm-6 col-lg-3">
+              <div class="footer-col">
+                <a href="" class="d-block">
+                  <img src="images/logo.svg" alt="Logo" class="img-fluid h-auto mb-5">
+                </a>
+
+                <div class="d-flex gap-4 icon-text mb-4">
+                  <div class="icon">
+                    <span>
+                      <i class="fa-solid fa-location-dot"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="text-capitalize lh-base">
+                      satkhra sadar, satkhira,
+                      Bangladesh.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="d-flex gap-4 icon-text mb-4">
+                  <div class="icon">
+                    <span>
+                      <i class="fa-regular fa-message"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="text-lowercase lh-base">
+                      example@gmail.com
+                    </p>
+                  </div>
+                </div>
+
+                <div class="d-flex gap-4 icon-text mb-4">
+                  <div class="icon">
+                    <span>
+                      <i class="fa-solid fa-phone"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="text-lowercase lh-base">
+                      +8801759-000000
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-6 col-lg-3">
+              <div class="footer-col">
+                <h1 class="text-color-dark border-bottom pb-3 mb-5">
+                  my account
+                </h1>
+
+                <ul>
+                  <li class="mb-4"><a class="text-color text-decoration-underline fs-2" href="">login</a></li>
+                  <li class="mb-4"><a class="text-color text-decoration-underline fs-2" href="">wish list</a></li>
+                  <li class="mb-4"><a class="text-color text-decoration-underline fs-2" href="">Order History</a></li>
+                  <li class="mb-4"><a class="text-color text-decoration-underline fs-2" href="">Order Tracking</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-6 col-lg-3">
+              <div class="footer-col">
+                <h1 class="text-color-dark border-bottom pb-3 mb-5">
+                  konw us
+                </h1>
+
+                <ul>
+                  <li class="mb-4"><a class="text-color fs-2" href="">Privacy Policy</a></li>
+                  <li class="mb-4"><a class="text-color fs-2" href="">Shipping Policy</a></li>
+                  <li class="mb-4"><a class="text-color fs-2" href="">Payment Policy</a></li>
+                  <li class="mb-4"><a class="text-color fs-2" href="">Returns & Refunds</a>
+                  </li>
+                  <li class="mb-4"><a class="text-color fs-2" href="">Terms & Conditions</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-6 col-lg-3">
+              <div class="footer-col">
+                <p class="mb-4 lh-base">download ecommerce apps</p>
+
+                <div class="row g-4 mb-4">
+                  <div class="col-12 col-sm-6">
+                    <a href="" class="btn button app-download-btn w-100 fs-5 bg-dark">
+                      <span class="fs-4">
+                        <i class="fa-brands fa-app-store"></i>
+                      </span>
+                      App Store
+                    </a>
+                  </div>
+
+                  <div class="col-12 col-sm-6">
+                    <a href="" class="btn button app-download-btn w-100 bg-transparent fs-5 text-color-dark">
+                      <span class="fs-4">
+                        <i class="fa-brands fa-google-play"></i>
+                      </span>
+                      Playstore
+                    </a>
+                  </div>
+                </div>
+
+                <p class="fw-500 mb-4">we accept payment by-</p>
+
+                <div class="">
+                  <img class="img-fluid me-2 mb-2" src="images/payment-method-1.png" alt="Payment Method Logo">
+                  <img class="img-fluid me-2 mb-2" src="images/payment-method-2.png" alt="Payment Method Logo">
+                  <img class="img-fluid me-2 mb-2" src="images/payment-method-3.png" alt="Payment Method Logo">
+                  <img class="img-fluid me-2 mb-2" src="images/payment-method-4.png" alt="Payment Method Logo">
+                  <img class="img-fluid me-2 mb-2" src="images/payment-method-5.png" alt="Payment Method Logo">
+                  <img class="img-fluid me-2 mb-2" src="images/payment-method-6.png" alt="Payment Method Logo">
+                  <img class="img-fluid me-2 mb-2" src="images/payment-method-7.png" alt="Payment Method Logo">
+                  <img class="img-fluid me-2 mb-2" src="images/payment-method-8.png" alt="Payment Method Logo">
+                  <img class="img-fluid me-2 mb-2" src="images/payment-method-9.png" alt="Payment Method Logo">
+                  <img class="img-fluid me-2 mb-2" src="images/payment-method-10.png" alt="Payment Method Logo">
+                  <img class="img-fluid me-2 mb-2" src="images/payment-method-11.png" alt="Payment Method Logo">
+                  <img class="img-fluid me-2 mb-2" src="images/payment-method-12.png" alt="Payment Method Logo">
+                  <img class="img-fluid me-2 mb-2" src="images/payment-method-13.png" alt="Payment Method Logo">
+                  <img class="img-fluid me-2 mb-2" src="images/payment-method-14.png" alt="Payment Method Logo">
+                  <img class="img-fluid me-2 mb-2" src="images/payment-method-15.png" alt="Payment Method Logo">
+                  <img class="img-fluid me-2 mb-2" src="images/payment-method-16.png" alt="Payment Method Logo">
+                  <img class="img-fluid me-2 mb-2" src="images/payment-method-17.png" alt="Payment Method Logo">
+                  <img class="img-fluid me-2 mb-2" src="images/payment-method-18.png" alt="Payment Method Logo">
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-lg-12 py-5">
+          <div class="row">
+            <div class="col text-lg-end">
+              <p class="text-capitalize">
+                © all rights reserved terms conditions- privacy policy
+              </p>
+            </div>
+            <div class="col text-end">
+              <div class="fs-1">
+                <a class="mx-2" href="">
+                  <span>
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </span>
+                </a>
+                <a class="mx-2" href="">
+                  <span>
+                    <i class="fa-brands fa-instagram"></i>
+                  </span>
+                </a>
+                <a class="mx-2" href="">
+                  <span>
+                    <i class="fa-brands fa-twitter"></i>
+                  </span>
+                </a>
+                <a class="mx-2" href="">
+                  <span>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
   <!-- Footer Ends Here -->
 
   <script src="assets/js/bootstrap.bundle.min.js"></script>

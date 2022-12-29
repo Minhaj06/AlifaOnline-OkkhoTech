@@ -106,16 +106,17 @@
 
 /* Featured Categories Section CSS Starts Here */
 .featured-card {
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.featured-card img {
+  border-radius: 1rem;
+  width: 100%;
   transition: 0.3s;
 }
 
-.featured-card:hover {
+.featured-card:hover img {
   transform: scale(1.03);
-  z-index: 1;
-}
-
-.featured-card img {
-  border-radius: 1rem;
 }
 
 .swiper-pagination-bullet {
@@ -145,6 +146,30 @@
 }
 /* Featured Categories Section CSS Ends Here */
 
+/* Testimonial Section CSS Starts Here */
+.testimonial .testimonial-speech .swiper-button-next:after,
+.testimonial .testimonial-speech .swiper-button-prev:after {
+  font-size: 2.5rem;
+  color: var(--brand-color);
+  font-weight: 600;
+}
+
+.product-gallery-img {
+  border-radius: 1.5rem;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.product-gallery-img img {
+  border-radius: 1.5rem;
+  transition: 0.3s;
+}
+
+.product-gallery-img:hover img {
+  transform: scale(1.1);
+}
+/* Testimonial Section CSS Ends Here */
+
 /* Subscribe Section CSS Starts Here */
 .subscribe-area {
   background-image: url(../../images/subscribe-banner.png);
@@ -161,3 +186,13 @@
   align-items: center;
 }
 /* Subscribe Section CSS Ends Here */
+
+/* Footer CSS Starts Here */
+.footer .footer-col ul li:hover a {
+  color: var(--brand-color) !important;
+}
+
+.footer .app-download-btn {
+  border: 1px solid var(--text-color-dark);
+}
+/* Footer CSS Ends Here */

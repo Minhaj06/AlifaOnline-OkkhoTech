@@ -1,3 +1,16 @@
+$(document).ready(function () {
+  // Toggle Sidebar
+  $(".menu-icon").click(function () {
+    $(".sidebar").toggleClass("show-sidebar");
+    $(".body-wrapper-freeze").toggleClass("d-block");
+  });
+
+  $(".body-wrapper-freeze").click(function () {
+    $(".sidebar").toggleClass("show-sidebar");
+    $(".body-wrapper-freeze").toggleClass("d-block");
+  });
+});
+
 // Filter Menu Active Toggle
 const filterMenu = document.querySelector(".filter-menu");
 const filterMenuItem = document.querySelectorAll(".filter-menu li");
@@ -11,7 +24,7 @@ filterMenuItem.forEach((item) => {
   });
 });
 
-// init Isotope
+// init Isotope Filter
 var $grid = $(".grid").isotope({
   // options
 });
@@ -23,13 +36,17 @@ $(".filter-menu").on("click", "li", function () {
 
 // Popular Product Slider
 const popularProductSwiper = new Swiper(".popular-product-swiper", {
+  spaceBetween: 15,
   loop: true,
-  spaceBetween: 10,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
   breakpoints: {
-    576: {
+    360: {
       slidesPerView: 2,
     },
-    992: {
+    768: {
       slidesPerView: 3,
     },
     1200: {
@@ -47,10 +64,10 @@ const featuredCategoriesSwiper = new Swiper(".featured-categories-swiper", {
   loop: true,
   spaceBetween: 10,
   breakpoints: {
-    576: {
+    360: {
       slidesPerView: 2,
     },
-    992: {
+    768: {
       slidesPerView: 3,
     },
     1200: {
@@ -62,7 +79,25 @@ const featuredCategoriesSwiper = new Swiper(".featured-categories-swiper", {
     prevEl: ".featured-categories .swiper-button-prev",
   },
   pagination: {
-    el: ".swiper-pagination",
+    el: ".featured-categories .position-relative .swiper-pagination",
+    clickable: true,
+  },
+});
+
+// Testimonial Slider
+const testimonialSpeechSwiper = new Swiper(".testimonial-speech-swiper", {
+  slidesPerView: 1,
+  loop: true,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: ".testimonial-speech .position-relative .swiper-button-next",
+    prevEl: ".testimonial-speech .position-relative .swiper-button-prev",
+  },
+  pagination: {
+    el: ".testimonial-speech .swiper-pagination",
     clickable: true,
   },
 });

@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.min.css" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <title>AlifaOnline</title>
+</head>
+
+<body>
+
+    <!-- Header Starts Here -->
+    <header class="header pt-4" id="header">
+
+        <!-- topbar -->
+        <div class="container">
+            <div
+                class="topbar row g-0 pt-2 pt-lg-0 gy-lg-3 justify-content-between align-items-center pt-lg-3 pb-4 w-100">
+                <!-- logo -->
+                <a class="col-4 col-lg-3 col-xl-4" href="">
+                    <img src="images/logo.svg" alt="" class="logo" />
+                </a>
+
+                <!-- search box -->
+                <div
+                    class="d-none d-lg-block col-lg-4 col-xl-4 search-box position-relative fs-3 overflow-hidden shadow">
+                    <input class="px-4 py-3 pe-5 rounded-3 w-100" type="search" name="" id="" placeholder="Search..." />
+                    <button class="btn fs-3 position-absolute top-0 end-0 h-100 px-4 py-3 text-color">
+                        <i class="fa-solid fa-magnifying-glass w-100 h-100"></i>
+                    </button>
+                </div>
+
+                <!-- icons -->
+                <div
+                    class="col-8 col-lg-5 col-xl-4 topbar-icons text-capitalize d-flex justify-content-end align-items-center gap-4 gap-sm-5 g-0">
+
+                    <div class="topbar-icon-group">
+                        <a class="text-color-dark" href="wishlist.html">
+                            <div class="floating-text-icon d-inline-block position-relative">
+                                <i class="fa-regular fa-heart"></i>
+                                <span class="floating-num">5</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="topbar-icon-group">
+                        <a class="text-color-dark" href="cart.html">
+                            <div class="floating-text-icon d-inline-block position-relative">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span class="floating-num">0</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="topbar-icon-group">
+                        <a class="text-color-dark" href="notifications.html">
+                            <div class="floating-text-icon d-inline-block position-relative">
+                                <i class="fa-regular fa-bell"></i>
+                                <span class="floating-num">9<sup>+</sup></span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="d-none d-lg-block">
+                        <a href="" class=fs-2">
+                            <span class="d-none d-sm-inline">log in</span>
+                        </a>
+                        <span>/</span>
+                        <a href="" class=fs-2">
+                            <span class="d-none d-sm-inline">register</span>
+                        </a>
+                    </div>
+
+                    <span class="menu-icon fs-30 ms-5 d-lg-none" role="button">
+                        <i class="fa-solid fa-bars d-block"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- menubar -->
+        <nav class="menubar d-none d-lg-block">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="menubar-left">
+                        <ul class="menu">
+                            <li>
+                                <a href="index.html">home</a>
+                            </li>
+                            <li>
+                                <a href="about.html">about</a>
+                            </li>
+                            <li>
+                                <a href="shop.html">shop</a>
+                            </li>
+                            <li>
+                                <a href="">vendors</a>
+                            </li>
+                            <li>
+                                <a href="">mega menu</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="menubar-right">
+                        <ul class="menu">
+                            <li>
+                                <a href="contact.html">contact us</a>
+                            </li>
+                            <li>
+                                <a href="faq.html">faq</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Header Ends Here -->
+
+
+    <!-- Tablet, Mobile Menu Start Here -->
+    <div class="d-lg-none">
+        <div class="body-wrapper-freeze"></div>
+
+        <!-- Side Menu -->
+        <div class="sidebar text-capitalize">
+
+            <div class="tab-mobile-menu-buttons mb-4">
+                <!-- Nav Pills -->
+                <ul class="nav nav-pills row g-3" role="tablist">
+                    <li class="nav-item col-6" role="presentation">
+                        <a class="nav-link mb-2 active" data-bs-toggle="tab" href="#menuTab" aria-selected="true"
+                            role="tab">
+                            <i class="fa-solid fa-bars"></i>
+                            MENU
+                        </a>
+                    </li>
+                    <li class="nav-item col-6" role="presentation">
+                        <a class="nav-link mb-2" data-bs-toggle="tab" href="#catTab" aria-selected="false" role="tab"
+                            tabindex="-1">
+                            <i class="fa-solid fa-table-cells-large"></i>
+                            categories
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <!-- Nav Tabs -->
+            <div class="sidebar-content">
+                <div class="tab-content mt-2 mb-4">
+                    <div id="menuTab" class="tab-pane active show" role="tabpanel">
+                        <h3 class="pb-4 border-bottom text-center brand-color font-weight-500 mb-4">Main Menu</h3>
+
+                        <ul class="sidebar-content-item">
+                            <li class="nav-item">
+                                <a href="">home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="">about</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="">shop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="">vendors</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="">contact us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="">Faq</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div id="catTab" class="tab-pane" role="tabpanel">
+                        <h3 class="pb-4 border-bottom text-center brand-color font-weight-500 mb-4">Categories</h3>
+
+
+                        <ul class="side-menu-categories">
+
+                            <li class="nav-item"><a href="" class="">tablet</a></li>
+
+                            <div class="dropdown">
+                                <li class="dropdown-toggle" id="laptopCat" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <a href="">Laptop</a>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </li>
+                                <ul class="dropdown-menu w-100" aria-labelledby="laptopCat">
+                                    <li><a class="dropdown-item" href="#">Lenovo</a></li>
+                                    <li><a class="dropdown-item" href="#">HP</a></li>
+                                    <li><a class="dropdown-item" href="#">Asus</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="dropdown">
+                                <li class="dropdown-toggle" id="desktopCat" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <a href="">desktop</a>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </li>
+                                <ul class="dropdown-menu w-100" aria-labelledby="desktopCat">
+                                    <li><a class="dropdown-item" href="#">RAM</a></li>
+                                    <li><a class="dropdown-item" href="#">ROM</a></li>
+                                    <li><a class="dropdown-item" href="#">SSD</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="dropdown">
+                                <li class="dropdown-toggle" id="mobileCat" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <a href="">mobile</a>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </li>
+                                <ul class="dropdown-menu w-100" aria-labelledby="mobileCat">
+                                    <li><a class="dropdown-item" href="#">iPhone</a></li>
+                                    <li><a class="dropdown-item" href="#">Realme</a></li>
+                                    <li><a class="dropdown-item" href="#">Samsung</a></li>
+                                    <li><a class="dropdown-item" href="#">Redmi</a></li>
+                                    <li><a class="dropdown-item" href="#">Nokia</a></li>
+                                </ul>
+                            </div>
+
+                            <li class="nav-item"><a href="" class="">Monitor</a></li>
+                            <li class="nav-item"><a href="" class="">UPS</a></li>
+                            <li class="nav-item"><a href="" class="">Office equipment</a></li>
+                            <li class="nav-item"><a href="" class="">Camera</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Bottom Menu -->
+        <div class="bottom-menu py-4 bg-white position-fixed bottom-0 start-0 w-100 border-top">
+            <div class="container">
+                <ul class="d-flex justify-content-around align-items-center">
+                    <li class="nav-item">
+                        <a href="index.html"><i class="fa-solid fa-house-chimney-window"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="shop.html"><i class="fa-solid fa-shop"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#searchModal"><i
+                                class="fa-solid fa-magnifying-glass"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="details.html"><i class="fa-regular fa-user"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Search Modal -->
+        <div class="modal fade p-0" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content py-5 rounded-0">
+
+                    <div class="text-end px-5">
+                        <span class="fs-1" role="button" data-bs-dismiss="modal">
+                            <i class="fa-solid fa-xmark"></i>
+                        </span>
+                    </div>
+
+                    <div class="modal-body text-center p-4 py-5 p-sm-5">
+
+                        <h1 class="text-color-dark text-capitalize font-weight-500 mb-5">Search For Products</h1>
+
+                        <form action="" class="search-form">
+                            <div class="input-group">
+                                <input type="search" class="form-control fs-3 px-4 py-2"
+                                    placeholder="Search For Products" aria-describedby="basic-addon2">
+                                <span class="input-group-text fs-3 bg-brand text-white" id="basic-addon2">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </span>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Tablet, Mobile Menu End Here -->
+
+
+    <!-- Main Contents Start Here -->
+    <main class="main" id="main">
+
+        <!-- Account Oreder Details Start Here -->
+        <section class="container text-capitalize">
+            <div class="row">
+
+                <!-- Side Nav -->
+                <div class="col-lg-4 col-xl-3 col-xxl-2">
+                    <div class="side-nav p-4">
+
+                        <div class="nav-header border-bottom pb-3 user-info d-flex gap-3 mb-4">
+                            <img class="user-profile-pic" src="images/avatar.png" alt="">
+
+                            <div>
+                                <h4 class="name">Ali Tufan</h4>
+                                <h5 class="email text-lowercase">alitfn58@gmail.com</h5>
+                            </div>
+                        </div>
+
+                        <div class="side-menu">
+                            <ul>
+                                <li class="nav-item">
+                                    <a href="details.html" class="nav-link">
+                                        <i class="fa-solid fa-user-check"></i>
+                                        account details
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="order.html" class="nav-link">
+                                        <i class="fa-solid fa-check-to-slot"></i>
+                                        order
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="address.html" class="nav-link">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        address
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="wishlist.html" class="nav-link">
+                                        <i class="fa-solid fa-shield-heart"></i>
+                                        wishlist
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="invoice.html" class="nav-link">
+                                        <i class="fa-solid fa-file-invoice-dollar"></i>
+                                        invoices
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">
+                                        <i class="fa-solid fa-right-from-bracket"></i>
+                                        logout
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Account Details -->
+                <div class="col-lg-8 col-xl-9 col-xxl-10">
+                    <div class="account-details p-4">
+                        <h1 class="text-color-dark mb-5">Account Details</h1>
+
+                        <!-- Nav Pills -->
+                        <ul class="nav nav-pills mb-5" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link active" data-bs-toggle="tab" href="#update-profile-info-tab"
+                                    aria-selected="true" role="tab">Profile İnformation</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" data-bs-toggle="tab" href="#update-password-tab"
+                                    aria-selected="false" role="tab" tabindex="-1">Password</a>
+                            </li>
+                        </ul>
+
+                        <!-- Tab Panes -->
+                        <div class="tab-content mt-2">
+                            <div id="update-profile-info-tab" class="tab-pane active show" role="tabpanel">
+
+                                <form action="">
+                                    <div class="row g-5 mb-5">
+                                        <div class="col-sm-6">
+                                            <label class="mb-3 text-color-dark font-weight-500" for="first_name">First
+                                                Name</label>
+                                            <input type="text" class="form-control fs-4 px-4 p-4" id="first_name"
+                                                name="first_name" placeholder="First Name">
+                                        </div>
+
+                                        <div class="col-sm-6">
+                                            <label class="mb-3 text-color-dark font-weight-500" for="last_name">Last
+                                                Name</label>
+                                            <input type="text" class="form-control fs-4 px-4 p-4" id="last_name"
+                                                name="last_name" placeholder="Last Name">
+                                        </div>
+
+                                        <div class="col-sm-6">
+                                            <label class="mb-3 text-color-dark font-weight-500" for="email">Email
+                                                Address</label>
+                                            <input type="email" class="form-control fs-4 px-4 p-4" id="email"
+                                                name="email" placeholder="Email Address">
+                                        </div>
+
+                                        <div class="col-sm-6">
+                                            <label class="mb-3 text-color-dark font-weight-500"
+                                                for="phone">Phone</label>
+                                            <input type="text" class="form-control fs-4 px-4 p-4" id="phone"
+                                                name="phone" placeholder="Phone Number">
+                                        </div>
+                                    </div>
+
+                                    <button type="submit" class="btn button px-5 py-3 fs-3 me-3">Update</button>
+                                    <button type="button" class="btn button-bg-white px-5 py-3 fs-3">Cancel</button>
+                                </form>
+
+                            </div>
+
+                            <div id="update-password-tab" class="tab-pane fade" role="tabpanel">
+                                <form action="">
+                                    <div class="row g-5 mb-5">
+                                        <div class="col-sm-12">
+                                            <label class="mb-3 text-color-dark font-weight-500"
+                                                for="current_password">Current
+                                                Password</label>
+                                            <input type="password" class="form-control fs-4 px-4 p-4"
+                                                id="current_password" name="current_password"
+                                                placeholder="Current Password">
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <label class="mb-3 text-color-dark font-weight-500" for="new_password">New
+                                                Password</label>
+                                            <input type="password" class="form-control fs-4 px-4 p-4" id="new_password"
+                                                name="new_password" placeholder="New Password">
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <label class="mb-3 text-color-dark font-weight-500"
+                                                for="c_new_password">Confirm
+                                                New Password</label>
+                                            <input type="password" class="form-control fs-4 px-4 p-4"
+                                                id="c_new_password" name="c_new_password"
+                                                placeholder="Confirm Current Password">
+                                        </div>
+                                    </div>
+
+                                    <button type="submit" class="btn button px-5 py-3 fs-3 me-3">Update</button>
+                                    <button type="button" class="btn button-bg-white px-5 py-3 fs-3">Cancel</button>
+                                </form>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- Account Oreder Details End Here -->
+
+    </main>
+    <!-- Main Contents End Here -->
+
+
+    <!-- Footer Starts Here -->
+    <footer class="footer mt-5 pt-4">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12 py-5 border-top border-bottom">
+                    <div class="row g-5 text-capitalize text-center text-sm-start">
+
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="footer-col">
+                                <a href="" class="d-block">
+                                    <img src="images/logo.svg" alt="Logo" class="img-fluid h-auto mb-5">
+                                </a>
+
+                                <div
+                                    class="d-flex justify-content-center justify-content-sm-start gap-4 icon-text mb-4">
+                                    <div class="icon">
+                                        <span>
+                                            <i class="fa-solid fa-location-dot"></i>
+                                        </span>
+                                    </div>
+                                    <div class="text">
+                                        <p class="text-capitalize lh-base">
+                                            satkhra sadar, satkhira,
+                                            Bangladesh.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="d-flex justify-content-center justify-content-sm-start gap-4 icon-text mb-4">
+                                    <div class="icon">
+                                        <span>
+                                            <i class="fa-regular fa-message"></i>
+                                        </span>
+                                    </div>
+                                    <div class="text">
+                                        <p class="text-lowercase lh-base">
+                                            example@gmail.com
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="d-flex justify-content-center justify-content-sm-start gap-4 icon-text mb-4">
+                                    <div class="icon">
+                                        <span>
+                                            <i class="fa-solid fa-phone"></i>
+                                        </span>
+                                    </div>
+                                    <div class="text">
+                                        <p class="text-lowercase lh-base">
+                                            +8801759-000000
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="footer-col">
+                                <h1 class="text-color-dark border-bottom pb-3 mb-5">
+                                    my account
+                                </h1>
+
+                                <ul>
+                                    <li class="mb-4"><a class="text-color text-decoration-underline fs-2"
+                                            href="">login</a></li>
+                                    <li class="mb-4"><a class="text-color text-decoration-underline fs-2" href="">wish
+                                            list</a></li>
+                                    <li class="mb-4"><a class="text-color text-decoration-underline fs-2" href="">Order
+                                            History</a></li>
+                                    <li class="mb-4"><a class="text-color text-decoration-underline fs-2" href="">Order
+                                            Tracking</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="footer-col">
+                                <h1 class="text-color-dark border-bottom pb-3 mb-5">
+                                    konw us
+                                </h1>
+
+                                <ul>
+                                    <li class="mb-4"><a class="text-color fs-2" href="">Privacy Policy</a></li>
+                                    <li class="mb-4"><a class="text-color fs-2" href="">Shipping Policy</a></li>
+                                    <li class="mb-4"><a class="text-color fs-2" href="">Payment Policy</a></li>
+                                    <li class="mb-4"><a class="text-color fs-2" href="">Returns & Refunds</a>
+                                    </li>
+                                    <li class="mb-4"><a class="text-color fs-2" href="">Terms & Conditions</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="footer-col">
+                                <p class="mb-4 lh-base">download ecommerce apps</p>
+
+                                <div class="row g-4 mb-4">
+                                    <div class="col-12 col-sm-6">
+                                        <a href="" class="btn button app-download-btn w-100 fs-5 bg-dark">
+                                            <span class="fs-4">
+                                                <i class="fa-brands fa-app-store"></i>
+                                            </span>
+                                            App Store
+                                        </a>
+                                    </div>
+
+                                    <div class="col-12 col-sm-6">
+                                        <a href=""
+                                            class="btn button app-download-btn w-100 bg-transparent fs-5 text-color-dark">
+                                            <span class="fs-4">
+                                                <i class="fa-brands fa-google-play"></i>
+                                            </span>
+                                            Playstore
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <p class="fw-500 mb-4">we accept payment by-</p>
+
+                                <div class="">
+                                    <img class="img-fluid me-2 mb-2" src="images/payment-method-1.png"
+                                        alt="Payment Method Logo">
+                                    <img class="img-fluid me-2 mb-2" src="images/payment-method-2.png"
+                                        alt="Payment Method Logo">
+                                    <img class="img-fluid me-2 mb-2" src="images/payment-method-3.png"
+                                        alt="Payment Method Logo">
+                                    <img class="img-fluid me-2 mb-2" src="images/payment-method-4.png"
+                                        alt="Payment Method Logo">
+                                    <img class="img-fluid me-2 mb-2" src="images/payment-method-5.png"
+                                        alt="Payment Method Logo">
+                                    <img class="img-fluid me-2 mb-2" src="images/payment-method-6.png"
+                                        alt="Payment Method Logo">
+                                    <img class="img-fluid me-2 mb-2" src="images/payment-method-7.png"
+                                        alt="Payment Method Logo">
+                                    <img class="img-fluid me-2 mb-2" src="images/payment-method-8.png"
+                                        alt="Payment Method Logo">
+                                    <img class="img-fluid me-2 mb-2" src="images/payment-method-9.png"
+                                        alt="Payment Method Logo">
+                                    <img class="img-fluid me-2 mb-2" src="images/payment-method-10.png"
+                                        alt="Payment Method Logo">
+                                    <img class="img-fluid me-2 mb-2" src="images/payment-method-11.png"
+                                        alt="Payment Method Logo">
+                                    <img class="img-fluid me-2 mb-2" src="images/payment-method-12.png"
+                                        alt="Payment Method Logo">
+                                    <img class="img-fluid me-2 mb-2" src="images/payment-method-13.png"
+                                        alt="Payment Method Logo">
+                                    <img class="img-fluid me-2 mb-2" src="images/payment-method-14.png"
+                                        alt="Payment Method Logo">
+                                    <img class="img-fluid me-2 mb-2" src="images/payment-method-15.png"
+                                        alt="Payment Method Logo">
+                                    <img class="img-fluid me-2 mb-2" src="images/payment-method-16.png"
+                                        alt="Payment Method Logo">
+                                    <img class="img-fluid me-2 mb-2" src="images/payment-method-17.png"
+                                        alt="Payment Method Logo">
+                                    <img class="img-fluid me-2 mb-2" src="images/payment-method-18.png"
+                                        alt="Payment Method Logo">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-12 py-5">
+                    <div class="row">
+                        <div class="col-8 text-lg-end">
+                            <p class="text-capitalize">
+                                © all rights reserved terms conditions- privacy policy
+                            </p>
+                        </div>
+                        <div class="col-4 text-end">
+                            <div class="fs-1">
+                                <a class="mx-2" href="">
+                                    <span>
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </span>
+                                </a>
+                                <a class="mx-2" href="">
+                                    <span>
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </span>
+                                </a>
+                                <a class="mx-2" href="">
+                                    <span>
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </span>
+                                </a>
+                                <a class="mx-2" href="">
+                                    <span>
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <!-- Footer Ends Here -->
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

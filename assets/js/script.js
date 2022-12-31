@@ -102,6 +102,23 @@ const testimonialSpeechSwiper = new Swiper(".testimonial-speech-swiper", {
   },
 });
 
+// Single Product Page Swiper Slider
+var swiper = new Swiper(".single-product-slider .mySwiper", {
+  loop: false,
+  spaceBetween: 10,
+  slidesPerView: 3,
+  freeMode: true,
+  watchSlidesProgress: true,
+});
+var swiper2 = new Swiper(".single-product-slider .mySwiper2", {
+  loop: false,
+  spaceBetween: 10,
+
+  thumbs: {
+    swiper: swiper,
+  },
+});
+
 // Price Range Slider
 let rangeSlider = document.querySelector(".range-slider");
 let rangeSliderAfter = window.getComputedStyle(rangeSlider, "::after");

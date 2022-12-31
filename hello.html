@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="vendors/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <title>Single Product - IdealNikah</title>
+</head>
+
+<body>
+
+    <!-- Header Starts Here -->
+    <header class="header" id="header">
+        <div class="container">
+
+            <!-- topbar -->
+            <div
+                class="topbar row g-0 pt-2 pt-lg-0 gy-lg-3 justify-content-between align-items-center border-bottom pt-lg-3 pb-3 w-100">
+                <!-- logo -->
+                <a class="col-4 col-lg-3 col-xl-4" href="">
+                    <img src="images/logo.svg" alt="" class="logo" />
+                </a>
+
+                <!-- search box -->
+                <div class="d-none d-lg-block col-lg-4 col-xl-4 search-box position-relative fs-3 overflow-hidden">
+                    <input class="px-4 py-3 pe-5 rounded-3 w-100" type="search" name="" id="" placeholder="Search..." />
+                    <button class="btn fs-3 position-absolute top-0 end-0 h-100 px-4 py-3 text-color">
+                        <i class="fa-solid fa-magnifying-glass w-100 h-100"></i>
+                    </button>
+                </div>
+
+                <!-- icons -->
+                <div
+                    class="col-8 col-lg-5 col-xl-4 topbar-icons text-capitalize d-flex justify-content-end align-items-center gap-4 gap-sm-5 g-0">
+                    <div class="topbar-icon-group">
+                        <a class="text-color-dark" href="wishlist.html">
+                            <div class="floating-text-icon d-inline-block position-relative">
+                                <i class="fa-regular fa-heart"></i>
+                                <span class="floating-num">5</span>
+                            </div>
+                            <span class="icon-name">wishlist</span>
+                        </a>
+                    </div>
+                    <div class="topbar-icon-group">
+                        <a class="text-color-dark" href="cart.html">
+                            <div class="floating-text-icon d-inline-block position-relative">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span class="floating-num">5</span>
+                            </div>
+                            <span class="icon-name">cart</span>
+                        </a>
+                    </div>
+                    <a href="" class="btn button fs-2 d-none d-lg-block">
+                        <span class="d-none d-sm-inline">login</span>
+                        <i class="fa-regular fa-user"></i>
+                    </a>
+                    <span class="menu-icon fs-1 d-lg-none" role="button">
+                        <i class="fa-solid fa-bars d-block"></i>
+                    </span>
+                </div>
+
+                <!-- <div class="col-1 d-lg-none text-end text-color-dark">
+          </div> -->
+
+            </div>
+
+            <!-- menubar -->
+            <div class="d-none d-lg-flex row align-items-center menubar border-bottom py-3">
+                <div class="col-md-3 dropdown-button">
+                    <a href="" class="btn button p-3">
+                        <i class="fa-solid fa-table-cells-large"></i>
+                        browse all catagories
+                    </a>
+
+                    <ul class="sub-menu shadow-lg">
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Desktop</a>
+                        </li>
+
+
+                        <li class="nav-item level-two-dropdown-button">
+                            <a href="" class="nav-link">
+                                Laptop <i class="fa-solid fa-chevron-right"></i>
+                            </a>
+
+                            <ul class="level-two-sub-menu shadow-lg">
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">HP</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">Dell</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">Asus</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">Lenovo</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">MSI</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">Gigabyte</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item level-two-dropdown-button">
+                            <a href="" class="nav-link">
+                                Mobile <i class="fa-solid fa-chevron-right"></i>
+                            </a>
+
+                            <ul class="level-two-sub-menu shadow-lg">
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">HP</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">Dell</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">Asus</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">Lenovo</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">MSI</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">Gigabyte</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Component</a>
+                        </li>
+
+                        <li class="nav-item level-two-dropdown-button">
+                            <a href="" class="nav-link">
+                                Monitor <i class="fa-solid fa-chevron-right"></i>
+                            </a>
+
+                            <ul class="level-two-sub-menu shadow-lg">
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">HP</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">Dell</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">Asus</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">Lenovo</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">MSI</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">Gigabyte</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="" class="nav-link">UPS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Tablet</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Office equipment</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Camera</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Security</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Networking</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-9">
+                    <ul class="menu text-capitalize">
+                        <li class="d-inline-block me-4 me-lg-5">
+                            <a href="index.html">home</a>
+                        </li>
+                        <li class="d-inline-block me-4 me-lg-5">
+                            <a href="about.html">about</a>
+                        </li>
+                        <li class="d-inline-block me-4 me-lg-5">
+                            <a href="shop.html">shop</a>
+                        </li>
+                        <li class="d-inline-block me-4 me-lg-5">
+                            <a href="vendors.html">vendors</a>
+                        </li>
+                        <li class="d-inline-block me-4 me-lg-5">
+                            <a href="contact.html">contact us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Ends Here -->
+
+    <!-- Tablet, Mobile Menu Start Here -->
+    <div class="d-lg-none">
+        <div class="body-wrapper-freeze"></div>
+
+        <!-- Side Menu -->
+        <div class="sidebar text-capitalize">
+
+            <div class="tab-mobile-menu-buttons mb-4">
+                <!-- Nav Pills -->
+                <ul class="nav nav-pills row g-3" role="tablist">
+                    <li class="nav-item col-6" role="presentation">
+                        <a class="nav-link mb-2 active" data-bs-toggle="tab" href="#menuTab" aria-selected="true"
+                            role="tab">
+                            <i class="fa-solid fa-bars"></i>
+                            MENU
+                        </a>
+                    </li>
+                    <li class="nav-item col-6" role="presentation">
+                        <a class="nav-link mb-2" data-bs-toggle="tab" href="#catTab" aria-selected="false" role="tab"
+                            tabindex="-1">
+                            <i class="fa-solid fa-table-cells-large"></i>
+                            categories
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <!-- Nav Tabs -->
+            <div class="sidebar-content">
+                <div class="tab-content mt-2 mb-4">
+                    <div id="menuTab" class="tab-pane active show" role="tabpanel">
+                        <h3 class="pb-4 border-bottom text-center brand-color font-weight-500 mb-4">Main Menu</h3>
+
+                        <ul class="sidebar-content-item">
+                            <li class="nav-item">
+                                <a href="">home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="">about</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="">shop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="">vendors</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="">contact us</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div id="catTab" class="tab-pane" role="tabpanel">
+                        <h3 class="pb-4 border-bottom text-center brand-color font-weight-500 mb-4">Categories</h3>
+
+
+                        <ul class="side-menu-categories">
+
+                            <li class="nav-item"><a href="" class="">tablet</a></li>
+
+                            <div class="dropdown">
+                                <li class="dropdown-toggle" id="laptopCat" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <a href="">Laptop</a>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </li>
+                                <ul class="dropdown-menu w-100" aria-labelledby="laptopCat">
+                                    <li><a class="dropdown-item" href="#">Lenovo</a></li>
+                                    <li><a class="dropdown-item" href="#">HP</a></li>
+                                    <li><a class="dropdown-item" href="#">Asus</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="dropdown">
+                                <li class="dropdown-toggle" id="desktopCat" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <a href="">desktop</a>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </li>
+                                <ul class="dropdown-menu w-100" aria-labelledby="desktopCat">
+                                    <li><a class="dropdown-item" href="#">RAM</a></li>
+                                    <li><a class="dropdown-item" href="#">ROM</a></li>
+                                    <li><a class="dropdown-item" href="#">SSD</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="dropdown">
+                                <li class="dropdown-toggle" id="mobileCat" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <a href="">mobile</a>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </li>
+                                <ul class="dropdown-menu w-100" aria-labelledby="mobileCat">
+                                    <li><a class="dropdown-item" href="#">iPhone</a></li>
+                                    <li><a class="dropdown-item" href="#">Realme</a></li>
+                                    <li><a class="dropdown-item" href="#">Samsung</a></li>
+                                    <li><a class="dropdown-item" href="#">Redmi</a></li>
+                                    <li><a class="dropdown-item" href="#">Nokia</a></li>
+                                </ul>
+                            </div>
+
+                            <li class="nav-item"><a href="" class="">Monitor</a></li>
+                            <li class="nav-item"><a href="" class="">UPS</a></li>
+                            <li class="nav-item"><a href="" class="">Office equipment</a></li>
+                            <li class="nav-item"><a href="" class="">Camera</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Bottom Menu -->
+        <div class="bottom-menu py-4 bg-white position-fixed bottom-0 start-0 w-100 border-top">
+            <div class="container">
+                <ul class="d-flex justify-content-around align-items-center">
+                    <li class="nav-item">
+                        <a href="index.html"><i class="fa-solid fa-house-chimney-window"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="shop.html"><i class="fa-solid fa-shop"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#searchModal"><i
+                                class="fa-solid fa-magnifying-glass"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="details.html"><i class="fa-regular fa-user"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Search Modal -->
+        <div class="modal fade p-0" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content py-5 rounded-0">
+
+                    <div class="text-end px-5">
+                        <span class="fs-1" role="button" data-bs-dismiss="modal">
+                            <i class="fa-solid fa-xmark"></i>
+                        </span>
+                    </div>
+
+                    <div class="modal-body text-center p-4 py-5 p-sm-5">
+
+                        <h1 class="text-color-dark text-capitalize font-weight-500 mb-5">Search For Products</h1>
+
+                        <form action="" class="search-form">
+                            <div class="input-group">
+                                <input type="search" class="form-control fs-3 px-4 py-2"
+                                    placeholder="Search For Products" aria-describedby="basic-addon2">
+                                <span class="input-group-text fs-3 bg-brand text-white" id="basic-addon2">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </span>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Tablet, Mobile Menu End Here -->
+
+    <!-- Main Contents Start Here -->
+    <main class="main" id="main">
+        <section class="product-details container text-capitalize">
+            <!-- Product Image Slider And Content -->
+            <div class="row g-5 product-slider-content mb-5">
+                <div class="col-lg-6">
+                    <div class="single-product-slider">
+                        <!-- Swiper -->
+
+                        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                            class="swiper mySwiper2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="images/single-product-slider-img-1.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/single-product-slider-img-2.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/single-product-slider-img-3.png" />
+                                </div>
+                            </div>
+                            <!-- <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div> -->
+                        </div>
+                        <div thumbsSlider="" class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="images/single-product-slider-img-1.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/single-product-slider-img-2.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/single-product-slider-img-3.png" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Swiper JS -->
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="single-product-details">
+                        <a href="" class="single-product-cat fs-1 d-block brand-color font-weight-500 mb-4">side bag</a>
+
+                        <h1 class="product-title text-color-dark mb-4">
+                            this bag is full custom leather.
+                        </h1>
+
+                        <div class="stars fs-4 mb-4">
+                            <i class="fa-solid fa-star me-2"></i>
+                            <i class="fa-solid fa-star me-2"></i>
+                            <i class="fa-solid fa-star me-2"></i>
+                            <i class="fa-solid fa-star me-2"></i>
+                            <i class="fa-solid fa-star me-2 not-given"></i>
+                            <span class="text-color">(4.0)</span>
+                        </div>
+
+                        <h3 class="mb-4">by <span class="brand-color">ideal nikah</span></h3>
+
+                        <p class="product-short-description lh-base mb-5">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id at quis sed mi
+                            purus scelerisque. Risus sit est sit consequat enim leo sed sem ultricies.
+                            Turpis donec consectetur vitae netus est lacus rhoncus.
+                        </p>
+
+                        <h3 class="best-price font-weight-600 mb-4">
+                            best price: <span class="fs-1 text-color-dark">৳1300.00</span>
+                        </h3>
+
+                        <h3 class="regular-price text-uppercase mb-4">
+                            <span class="muted-regular-price">mrp <span
+                                    class="text-decoration-line-through">৳1900.00</span></span>
+                            <span class="brand-color font-weight-600">get 30% off</span>
+                        </h3>
+
+                        <p class="mb-5 bg-brand-light d-inline-block fs-5 p-3 rounded-4">
+                            <i class="fa-regular fa-eye"></i> 4595 people recently viewed this.
+                        </p>
+
+                        <div class="buttons mb-5">
+                            <a href="" class="btn px-4 button me-3">buy now</a>
+                            <a href="" class="btn px-4 button-outline">add to cart</a>
+                        </div>
+
+                        <div class="what-we-offer row g-4 text-black">
+                            <div class="col-6">
+                                <div>
+                                    <span class="brand-color me-4">
+                                        <i class="fa-solid fa-shield-halved"></i>
+                                    </span>
+                                    100% leather
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div>
+                                    <span class="brand-color me-4">
+                                        <i class="fa-solid fa-check"></i>
+                                    </span>
+                                    100%purchase protection
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div>
+                                    <span class="brand-color me-4">
+                                        <i class="fa-solid fa-check"></i>
+                                    </span>
+                                    10 days return policy
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div>
+                                    <span class="brand-color me-4">
+                                        <i class="fa-solid fa-truck-fast"></i>
+                                    </span>
+                                    24/7 curieer support
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div>
+                                    <span class="brand-color me-4">
+                                        <i class="fa-regular fa-gem"></i>
+                                    </span>
+                                    outstanding collection
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Product Image Slider And Content -->
+
+            <hr />
+
+            <!-- Product Details Tabs Start Here -->
+            <div class="product-details-tabs row my-5">
+                <div class="col-12">
+                    <!-- Nav Pills -->
+                    <ul class="nav nav-pills fovourite" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link mb-2 active" data-bs-toggle="tab" href="#product-details-tab"
+                                aria-selected="true" role="tab">product details</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link mb-2" data-bs-toggle="tab" href="#return-policy-tab"
+                                aria-selected="false" role="tab" tabindex="-1">return policy</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link mb-2" data-bs-toggle="tab" href="#moneyback-tab" aria-selected="false"
+                                role="tab" tabindex="-1">moneyback</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link mb-2" data-bs-toggle="tab" href="#faq-tab" aria-selected="false"
+                                role="tab" tabindex="-1">faq</a>
+                        </li>
+                    </ul>
+
+                    <!-- Tab Panes -->
+                    <div class="tab-content mt-2">
+                        <div id="product-details-tab" class="tab-pane active show" role="tabpanel">
+                            <br />
+                            <br />
+                            <h1 class="product-details-tab-title text-color-dark mb-5">
+                                this bag is full custom leather.
+                            </h1>
+
+                            <ul style="list-style: disc inside none; line-height: 1.5" class="tex-color">
+                                <li class="mb-3">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim sed
+                                    tellus ac fermentum ullamcorper praesent molestie.Lorem ipsum dolor sit
+                                    amet, consectetur adipiscing elit. Dignissim sed tellus ac fermentum
+                                    ullamcorper praesent molestie. Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Dignissim sed tellus ac fermentum ullamcorper praesent
+                                    molestie.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim
+                                    sed tellus ac fermentum ullamcorper praesent molestie. Lorem ipsum dolor
+                                    sit amet, consectetur adipiscing elit. Dignissim sed tellus ac fermentum
+                                    ullamcorper praesent molestie.Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Dignissim sed tellus ac fermentum ullamcorper praesent
+                                    molestie.
+                                </li>
+
+                                <li class="mb-3">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim sed
+                                    tellus ac fermentum ullamcorper praesent molestie.Lorem ipsum dolor sit
+                                    amet, consectetur adipiscing elit. Dignissim sed tellus ac fermentum
+                                    ullamcorper praesent molestie.
+                                </li>
+
+                                <li class="mb-3">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim sed
+                                    tellus ac fermentum ullamcorper praesent molestie.Lorem ipsum dolor sit
+                                    amet, consectetur adipiscing elit. Dignissim sed tellus ac fermentum
+                                    ullamcorper praesent molestie.
+                                </li>
+
+                                <li class="mb-3">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim sed
+                                    tellus ac fermentum ullamcorper praesent molestie.
+                                </li>
+
+                                <li class="mb-3">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim sed
+                                    tellus ac fermentum ullamcorper praesent molestie.
+                                </li>
+
+                                <li class="mb-3">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim sed
+                                    tellus ac fermentum ullamcorper praesent molestie.Lorem ipsum dolor sit
+                                    amet, consectetur adipiscing elit. Dignissim sed tellus ac fermentum
+                                    ullamcorper praesent molestie.
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div id="return-policy-tab" class="tab-pane fade" role="tabpanel">
+                            <br />
+                            <br />
+                            <h1 class="product-details-tab-title text-color-dark mb-5">return policy</h1>
+
+                            <ul style="list-style: disc inside none; line-height: 1.5" class="tex-color">
+                                <li class="mb-3">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim sed
+                                    tellus ac fermentum ullamcorper praesent molestie.Lorem ipsum dolor sit
+                                    amet, consectetur adipiscing elit. Dignissim sed tellus ac fermentum
+                                    ullamcorper praesent molestie. Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Dignissim sed tellus ac fermentum ullamcorper praesent
+                                    molestie.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim
+                                    sed tellus ac fermentum ullamcorper praesent molestie. Lorem ipsum dolor
+                                    sit amet, consectetur adipiscing elit. Dignissim sed tellus ac fermentum
+                                    ullamcorper praesent molestie.Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Dignissim sed tellus ac fermentum ullamcorper praesent
+                                    molestie.
+                                </li>
+
+                                <li class="mb-3">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis pariatur
+                                    quis quia? Nihil a eum, distinctio placeat nulla dolores? Amet voluptatum
+                                    quibusdam veritatis tenetur voluptas doloribus quae magni odio illum!
+                                </li>
+
+                                <li class="mb-3">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis pariatur
+                                    quis quia? Nihil a eum, distinctio placeat nulla dolores? Amet voluptatum
+                                    quibusdam veritatis tenetur voluptas doloribus quae magni odio illum!
+                                </li>
+
+                                <li class="mb-3">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis pariatur
+                                    quis quia? Nihil a eum, distinctio placeat nulla dolores? Amet voluptatum
+                                    quibusdam veritatis tenetur voluptas doloribus quae magni odio illum!
+                                </li>
+
+                                <li class="mb-3">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis pariatur
+                                    quis quia? Nihil a eum, distinctio placeat nulla dolores? Amet voluptatum
+                                    quibusdam veritatis tenetur voluptas doloribus quae magni odio illum!
+                                </li>
+
+                                <li class="mb-3">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis pariatur
+                                    quis quia? Nihil a eum, distinctio placeat nulla dolores? Amet voluptatum
+                                    quibusdam veritatis tenetur voluptas doloribus quae magni odio illum!
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div id="moneyback-tab" class="tab-pane fade" role="tabpanel">
+                            <br />
+                            <br />
+                            <h1 class="product-details-tab-title text-color-dark mb-5">moneyback</h1>
+
+                            <ul style="list-style: disc inside none; line-height: 1.5" class="tex-color">
+                                <li class="mb-3">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim sed
+                                    tellus ac fermentum ullamcorper praesent molestie.Lorem ipsum dolor sit
+                                    amet, consectetur adipiscing elit. Dignissim sed tellus ac fermentum
+                                    ullamcorper praesent molestie. Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Dignissim sed tellus ac fermentum ullamcorper praesent
+                                    molestie.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim
+                                    sed tellus ac fermentum ullamcorper praesent molestie. Lorem ipsum dolor
+                                    sit amet, consectetur adipiscing elit. Dignissim sed tellus ac fermentum
+                                    ullamcorper praesent molestie.Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Dignissim sed tellus ac fermentum ullamcorper praesent
+                                    molestie.
+                                </li>
+
+                                <li class="mb-3">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis pariatur
+                                    quis quia? Nihil a eum, distinctio placeat nulla dolores? Amet voluptatum
+                                    quibusdam veritatis tenetur voluptas doloribus quae magni odio illum!
+                                </li>
+
+                                <li class="mb-3">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis pariatur
+                                    quis quia? Nihil a eum, distinctio placeat nulla dolores? Amet voluptatum
+                                    quibusdam veritatis tenetur voluptas doloribus quae magni odio illum!
+                                </li>
+
+                                <li class="mb-3">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis pariatur
+                                    quis quia? Nihil a eum, distinctio placeat nulla dolores? Amet voluptatum
+                                    quibusdam veritatis tenetur voluptas doloribus quae magni odio illum!
+                                </li>
+
+                                <li class="mb-3">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis pariatur
+                                    quis quia? Nihil a eum, distinctio placeat nulla dolores? Amet voluptatum
+                                    quibusdam veritatis tenetur voluptas doloribus quae magni odio illum!
+                                </li>
+
+                                <li class="mb-3">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis pariatur
+                                    quis quia? Nihil a eum, distinctio placeat nulla dolores? Amet voluptatum
+                                    quibusdam veritatis tenetur voluptas doloribus quae magni odio illum!
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div id="faq-tab" class="tab-pane fade" role="tabpanel">
+                            <br />
+                            <br />
+                            <h1 class="product-details-tab-title text-color-dark mb-5">FAQs</h1>
+
+                            <ul style="list-style: disc inside none; line-height: 1.5" class="tex-color">
+                                <li class="mb-3">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim sed
+                                    tellus ac fermentum ullamcorper praesent molestie.Lorem ipsum dolor sit
+                                    amet, consectetur adipiscing elit. Dignissim sed tellus ac fermentum
+                                    ullamcorper praesent molestie. Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Dignissim sed tellus ac fermentum ullamcorper praesent
+                                    molestie.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim
+                                    sed tellus ac fermentum ullamcorper praesent molestie. Lorem ipsum dolor
+                                    sit amet, consectetur adipiscing elit. Dignissim sed tellus ac fermentum
+                                    ullamcorper praesent molestie.Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Dignissim sed tellus ac fermentum ullamcorper praesent
+                                    molestie.
+                                </li>
+
+                                <li class="mb-3">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis pariatur
+                                    quis quia? Nihil a eum, distinctio placeat nulla dolores? Amet voluptatum
+                                    quibusdam veritatis tenetur voluptas doloribus quae magni odio illum!
+                                </li>
+
+                                <li class="mb-3">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis pariatur
+                                    quis quia? Nihil a eum, distinctio placeat nulla dolores? Amet voluptatum
+                                    quibusdam veritatis tenetur voluptas doloribus quae magni odio illum!
+                                </li>
+
+                                <li class="mb-3">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis pariatur
+                                    quis quia? Nihil a eum, distinctio placeat nulla dolores? Amet voluptatum
+                                    quibusdam veritatis tenetur voluptas doloribus quae magni odio illum!
+                                </li>
+
+                                <li class="mb-3">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis pariatur
+                                    quis quia? Nihil a eum, distinctio placeat nulla dolores? Amet voluptatum
+                                    quibusdam veritatis tenetur voluptas doloribus quae magni odio illum!
+                                </li>
+
+                                <li class="mb-3">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis pariatur
+                                    quis quia? Nihil a eum, distinctio placeat nulla dolores? Amet voluptatum
+                                    quibusdam veritatis tenetur voluptas doloribus quae magni odio illum!
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Product Details TAbs End Here -->
+        </section>
+
+        <!-- Similar Product Section Starts Here -->
+        <section class="position-relative pt-0">
+            <div class="container text-capitalize">
+                <h2 class="sec-title">similar product</h2>
+
+                <div class="row g-2 g-sm-4 mb-5">
+                    <div class="col-6 col-lg-4 col-xl-3">
+                        <a href="">
+                            <div
+                                class="product-card px-4 py-5 h-100 d-flex flex-column justify-content-end shadow-lg bg-white position-relative overflow-hidden">
+                                <div class="text-center">
+                                    <img src="images/popular-product-1.png" alt="" class="img-fluid mb-4" />
+                                </div>
+                                <div>
+                                    <h5 class="mb-3">shoes</h5>
+                                    <h4 class="text-color-dark font-weight-600 mb-4">
+                                        simple coverce for all time wearing.
+                                    </h4>
+                                    <div class="stars fs-4 mb-4">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star not-given"></i>
+                                        <span class="text-color">(4.0)</span>
+                                    </div>
+                                    <h4 class="text-black">
+                                        ৳1500.00
+                                        <sub class="text-color text-decoration-line-through">৳1900.00</sub>
+                                    </h4>
+                                </div>
+
+                                <div class="offer-highlight">latest</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-6 col-lg-4 col-xl-3">
+                        <a href="">
+                            <div
+                                class="product-card px-4 py-5 h-100 d-flex flex-column justify-content-end shadow-lg bg-white position-relative overflow-hidden">
+                                <div class="text-center">
+                                    <img src="images/popular-product-2.png" alt="" class="img-fluid mb-4" />
+                                </div>
+                                <div>
+                                    <h5 class="mb-3">side bag</h5>
+                                    <h4 class="text-color-dark font-weight-600 mb-4">
+                                        this bag is full custom leather.
+                                    </h4>
+                                    <div class="stars fs-4 mb-4">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star not-given"></i>
+                                        <span class="text-color">(4.0)</span>
+                                    </div>
+                                    <h4 class="text-black">
+                                        ৳1300.00
+                                        <sub class="text-color text-decoration-line-through">৳1900.00</sub>
+                                    </h4>
+                                </div>
+
+                                <div class="offer-highlight">40%off</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-6 col-lg-4 col-xl-3">
+                        <a href="">
+                            <div
+                                class="product-card px-4 py-5 h-100 d-flex flex-column justify-content-end shadow-lg bg-white position-relative overflow-hidden">
+                                <div class="text-center">
+                                    <img src="images/popular-product-3.png" alt="" class="img-fluid mb-4" />
+                                </div>
+                                <div>
+                                    <h5 class="mb-3">short coart</h5>
+                                    <h4 class="text-color-dark font-weight-600 mb-4">
+                                        looking simple cofort to wear.
+                                    </h4>
+                                    <div class="stars fs-4 mb-4">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star not-given"></i>
+                                        <span class="text-color">(4.0)</span>
+                                    </div>
+                                    <h4 class="text-black">
+                                        ৳1499.00
+                                        <sub class="text-color text-decoration-line-through">৳1900.00</sub>
+                                    </h4>
+                                </div>
+
+                                <div class="offer-highlight">new</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-6 col-lg-4 col-xl-3">
+                        <a href="">
+                            <div
+                                class="product-card px-4 py-5 h-100 d-flex flex-column justify-content-end shadow-lg bg-white position-relative overflow-hidden">
+                                <div class="text-center">
+                                    <img src="images/popular-product-4.png" alt="" class="img-fluid mb-4" />
+                                </div>
+                                <div>
+                                    <h5 class="mb-3">makeup box</h5>
+                                    <h4 class="text-color-dark font-weight-600 mb-4">full set makeup box.</h4>
+                                    <div class="stars fs-4 mb-4">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star not-given"></i>
+                                        <span class="text-color">(4.0)</span>
+                                    </div>
+                                    <h4 class="text-black">
+                                        ৳1500.00
+                                        <sub class="text-color text-decoration-line-through">৳1900.00</sub>
+                                    </h4>
+                                </div>
+
+                                <div class="offer-highlight">20%off</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Similar Product Section Ends Here -->
+
+        <!-- Trending Product Section Starts Here -->
+        <section class="position-relative pt-0">
+            <div class="container text-capitalize">
+                <h2 class="sec-title">trending product</h2>
+
+                <div class="row g-2 g-sm-4 mb-5">
+                    <div class="col-6 col-lg-4 col-xl-3">
+                        <a href="">
+                            <div
+                                class="product-card px-4 py-5 h-100 d-flex flex-column justify-content-end shadow-lg bg-white position-relative overflow-hidden">
+                                <div class="text-center">
+                                    <img src="images/popular-product-5.png" alt="" class="img-fluid mb-4" />
+                                </div>
+                                <div>
+                                    <h5 class="mb-3">shoes</h5>
+                                    <h4 class="text-color-dark font-weight-600 mb-4">
+                                        simple coverce for all time wearing.
+                                    </h4>
+                                    <div class="stars fs-4 mb-4">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star not-given"></i>
+                                        <span class="text-color">(4.0)</span>
+                                    </div>
+                                    <h4 class="text-black">
+                                        ৳1500.00
+                                        <sub class="text-color text-decoration-line-through">৳1900.00</sub>
+                                    </h4>
+                                </div>
+
+                                <div class="offer-highlight">latest</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-6 col-lg-4 col-xl-3">
+                        <a href="">
+                            <div
+                                class="product-card px-4 py-5 h-100 d-flex flex-column justify-content-end shadow-lg bg-white position-relative overflow-hidden">
+                                <div class="text-center">
+                                    <img src="images/popular-product-6.png" alt="" class="img-fluid mb-4" />
+                                </div>
+                                <div>
+                                    <h5 class="mb-3">shoes</h5>
+                                    <h4 class="text-color-dark font-weight-600 mb-4">
+                                        this bag is full custom leather.
+                                    </h4>
+                                    <div class="stars fs-4 mb-4">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star not-given"></i>
+                                        <span class="text-color">(4.0)</span>
+                                    </div>
+                                    <h4 class="text-black">
+                                        ৳1500.00
+                                        <sub class="text-color text-decoration-line-through">৳1900.00</sub>
+                                    </h4>
+                                </div>
+
+                                <div class="offer-highlight">40%off</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-6 col-lg-4 col-xl-3">
+                        <a href="">
+                            <div
+                                class="product-card px-4 py-5 h-100 d-flex flex-column justify-content-end shadow-lg bg-white position-relative overflow-hidden">
+                                <div class="text-center">
+                                    <img src="images/popular-product-7.png" alt="" class="img-fluid mb-4" />
+                                </div>
+                                <div>
+                                    <h5 class="mb-3">short coart</h5>
+                                    <h4 class="text-color-dark font-weight-600 mb-4">
+                                        looking simple cofort to wear.
+                                    </h4>
+                                    <div class="stars fs-4 mb-4">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star not-given"></i>
+                                        <span class="text-color">(4.0)</span>
+                                    </div>
+                                    <h4 class="text-black">
+                                        ৳1500.00
+                                        <sub class="text-color text-decoration-line-through">৳1900.00</sub>
+                                    </h4>
+                                </div>
+
+                                <div class="offer-highlight">new</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-6 col-lg-4 col-xl-3">
+                        <div
+                            class="product-card px-4 py-5 h-100 d-flex flex-column justify-content-end shadow-lg bg-white position-relative overflow-hidden">
+                            <div class="text-center">
+                                <img src="images/popular-product-1.png" alt="" class="img-fluid mb-4" />
+                            </div>
+                            <div>
+                                <h5 class="mb-3">makeup box</h5>
+                                <h4 class="text-color-dark font-weight-600 mb-4">full set makeup box.</h4>
+                                <div class="stars fs-4 mb-4">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star not-given"></i>
+                                    <span class="text-color">(4.0)</span>
+                                </div>
+                                <h4 class="text-black">
+                                    ৳1500.00
+                                    <sub class="text-color text-decoration-line-through">৳1900.00</sub>
+                                </h4>
+                            </div>
+
+                            <div class="offer-highlight">20%off</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Trending Product Section Ends Here -->
+    </main>
+    <!-- Main Contents End Here -->
+
+    <!-- Footer Starts Here -->
+    <footer class="footer bg-brand py-5">
+        <div class="container text-capitalize">
+            <div class="row mb-5 g-5 gx-4 gx-xl-5">
+                <div class="col-6 col-lg-3">
+                    <div>
+                        <h3 class="fs-1 font-weight-normal mb-4 mb-lg-5">Ideal Nikah</h3>
+                        <ul class="fs-3">
+                            <li class="nav-item mb-3">
+                                <a href="" class="nav-link">about us</a>
+                            </li>
+                            <li class="nav-item mb-3">
+                                <a href="" class="nav-link">How to Buy</a>
+                            </li>
+                            <li class="nav-item mb-3">
+                                <a href="" class="nav-link">Contact Us</a>
+                            </li>
+                            <li class="nav-item mb-3">
+                                <a href="" class="nav-link">idealNikah Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3">
+                    <div>
+                        <h3 class="fs-1 font-weight-normal mb-4 mb-lg-5">Ideal Nikah</h3>
+                        <ul class="fs-3">
+                            <li class="nav-item mb-3">
+                                <a href="" class="nav-link">Login</a>
+                            </li>
+                            <li class="nav-item mb-3">
+                                <a href="" class="nav-link">Wish List</a>
+                            </li>
+                            <li class="nav-item mb-3">
+                                <a href="" class="nav-link">Order History</a>
+                            </li>
+                            <li class="nav-item mb-3">
+                                <a href="" class="nav-link">Order Tracking</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-6 -flex flex-column align-items-center d-sm-block col-sm-6 col-lg-3">
+                    <div>
+                        <h3 class="fs-1 font-weight-normal mb-4 mb-lg-5">Ideal Nikah</h3>
+                        <ul class="fs-3">
+                            <li class="nav-item mb-3">
+                                <a href="" class="nav-link">Privacy Policy</a>
+                            </li>
+                            <li class="nav-item mb-3">
+                                <a href="" class="nav-link">Shipping Policy</a>
+                            </li>
+                            <li class="nav-item mb-3">
+                                <a href="" class="nav-link">Payment Policy</a>
+                            </li>
+                            <li class="nav-item mb-3">
+                                <a href="" class="nav-link">Returns & Refunds</a>
+                            </li>
+                            <li class="nav-item mb-3">
+                                <a href="" class="nav-link">Terms & Conditions </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-6 -flex flex-column align-items-center d-sm-block col-sm-6 col-lg-3">
+                    <div>
+                        <h3 class="fs-1 font-weight-normal mb-4 mb-lg-5">join with us</h3>
+
+
+                        <div>
+                            <a href="" class="text-white fs-2 me-3">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="" class="text-white fs-2 me-3">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="" class="text-white fs-2 me-3">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 fs-2 text-center">Copyright © 2022 idealnikah.com</div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Ends Here -->
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

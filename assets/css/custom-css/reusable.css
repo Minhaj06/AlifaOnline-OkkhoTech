@@ -37,6 +37,10 @@
   background-color: var(--brand-color) !important;
 }
 
+.bg-brand-light {
+  background-color: var(--brand-color-light);
+}
+
 .bg-light {
   background-color: var(--light-color) !important;
 }

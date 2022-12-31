@@ -271,7 +271,7 @@
 /* Slide CSS */
 
 .single-product-slider {
-  border: 1px solid var(--brand-color-light);
+  border: 1px solid #e2a993;
   padding: 3rem;
   border-radius: 2rem;
   margin-bottom: 8rem;
@@ -293,7 +293,7 @@
 }
 
 .single-product-slider .mySwiper .swiper-slide {
-  border: 1px solid var(--brand-color-light);
+  border: 1px solid #e2a993;
   height: 15rem;
   max-height: 15rem;
   padding: 1rem;

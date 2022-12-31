@@ -119,6 +119,27 @@ var swiper2 = new Swiper(".single-product-slider .mySwiper2", {
   },
 });
 
+// Password Show Hide
+const password = document.getElementById("password");
+const cPassword = document.getElementById("c-password");
+
+const passIcon = document.querySelector(".pass-icon");
+const cPassIcon = document.querySelector(".c-pass-icon");
+
+function showHidePass(selector, icon) {
+  console.log(password.value);
+
+  if (selector.type === "password") {
+    selector.setAttribute("type", "text");
+    icon.classList.remove("fa-eye");
+    icon.classList.add("fa-eye-slash");
+  } else {
+    selector.setAttribute("type", "password");
+    icon.classList.remove("fa-eye-slash");
+    icon.classList.add("fa-eye");
+  }
+}
+
 // Price Range Slider
 let rangeSlider = document.querySelector(".range-slider");
 let rangeSliderAfter = window.getComputedStyle(rangeSlider, "::after");

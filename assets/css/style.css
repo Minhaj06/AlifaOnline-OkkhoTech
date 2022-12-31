@@ -187,12 +187,263 @@
 }
 /* Subscribe Section CSS Ends Here */
 
-/* Footer CSS Starts Here */
-.footer .footer-col ul li:hover a {
-  color: var(--brand-color) !important;
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+/* Single Product Page Starts Here */
+
+/* product slider */
+.single-product-slider {
+  border: 1px solid rgb(0, 191, 255, 30%);
+  padding: 3rem;
+  border-radius: 2rem;
+  margin-bottom: 8rem;
 }
 
-.footer .app-download-btn {
-  border: 1px solid var(--text-color-dark);
+.single-product-slider .swiper-slide img {
+  width: 35rem;
+  max-width: 35rem;
 }
-/* Footer CSS Ends Here */
+
+.single-product-slider .swiper-wrpper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.single-product-slider .mySwiper {
+  margin-bottom: -12rem;
+}
+
+.single-product-slider .mySwiper .swiper-slide {
+  border: 1px solid rgb(0, 191, 255, 30%);
+  height: 15rem;
+  max-height: 15rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  background-color: var(--white);
+  opacity: 1;
+}
+
+.single-product-slider .mySwiper .swiper-slide-thumb-active {
+  border-color: var(--brand-color);
+}
+
+.single-product-slider .mySwiper .swiper-slide img {
+  display: block;
+  width: 100%;
+}
+/* product slider end */
+
+.single-product-cat:hover {
+  opacity: 75%;
+}
+.product-details .product-title {
+  font-size: 3.5rem;
+}
+
+.product-details-tabs .nav-pills .nav-item {
+  margin-right: 2rem;
+}
+
+.product-details-tabs .nav-pills .nav-link {
+  background: var(--text-color-light);
+  color: var(--text-color);
+  padding: 1rem 4rem;
+  border-radius: 0.5rem;
+}
+
+.product-details-tabs .nav-pills .nav-link.active {
+  background: var(--brand-color);
+  color: var(--white);
+}
+
+::marker {
+  color: var(--brand-color);
+  font-size: 2.5rem;
+}
+/* Single Product Page Ends Here */
+
+/* Add To Cart Page Starts Here */
+.edit-icon-pen {
+  color: var(--white);
+  font-size: 1.5rem;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+}
+
+.edit-icon-pen:hover {
+  color: var(--white);
+  opacity: 70%;
+}
+
+.card-item-single .img-thumbnail {
+  width: 9rem;
+  height: 9rem;
+}
+
+.card-item-single:last-child {
+  border-bottom: 0 !important;
+}
+
+.add-to-cart-bottom-banner {
+  background-image: url("../../images/add-to-cart-bottom-banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 6rem;
+  margin-bottom: 5rem;
+  border-radius: 1rem;
+  color: var(--white);
+}
+/* Add To Cart Page Ends Here */
+
+/* Shop Page Starts Here */
+ul.collapse-list li:last-child {
+  border-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.per-page-filter select {
+  width: 10rem;
+  border-radius: 0.5rem;
+  border-color: var(--text-color);
+  padding: 0.3rem 1rem;
+}
+/* Shop Page Ends Here */
+
+/* Signup & Signin Page Start Here  */
+.login-form input {
+  border: none !important;
+}
+.login-form input:focus {
+  outline: 0px !important;
+  appearance: none;
+  box-shadow: none !important;
+  border: none;
+}
+/* Signup & Signin Page End Here  */
+
+/* Side Nav Starts Here */
+
+.side-nav .user-info .user-profile-pic {
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--brand-color);
+  border-radius: 50%;
+}
+
+.side-nav .side-menu .nav-item {
+  margin-bottom: 1.2rem;
+}
+
+.side-nav .side-menu .nav-link {
+  color: var(--text-color-dark);
+  font-size: 1.5rem;
+  padding-left: 0;
+}
+
+.side-nav .side-menu .nav-link:hover {
+  color: var(--brand-color);
+}
+
+.side-nav .side-menu .nav-link i {
+  margin-right: 0.5rem;
+  font-size: 1.7rem;
+  width: 2.2rem;
+}
+/* Side Nav Ends Here */
+
+/* Account Order Page Starts Here */
+.order-details .table thead {
+  background-color: var(--brand-color-light);
+  border-radius: 2rem;
+}
+
+.order-details .table > :not(:last-child) > :last-child > * {
+  border-bottom: none;
+}
+
+.order-details .table td {
+  padding: 2rem 1rem;
+}
+
+.order-details .table > :not(caption) > * > * {
+  padding: 2.2rem 1rem;
+}
+
+.order-details .table .status {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.order-details .table .delivered {
+  background-color: var(--brand-color-light);
+  color: var(--brand-color);
+}
+
+.order-details .table .cancel {
+  background-color: #f6dfe1;
+  color: var(--bs-danger);
+}
+
+.order-details .table .in-progress {
+  background-color: #ffeebb;
+  color: #ff7440;
+}
+
+/* Account Order Page Ends Here */
+
+/* Account Address Page Starts Here  */
+.billing-address .billing-address-body h5 {
+  font-size: 1.5rem;
+  margin-bottom: 1.2rem;
+}
+/* Account Address Page Ends Here  */
+
+/* Account Details Page Starts Here */
+.account-details .nav-pills .nav-item {
+  margin-right: 2rem;
+}
+
+.account-details .nav-pills .nav-link {
+  font-size: 1.7rem;
+  color: var(--text-color);
+  font-weight: 600;
+  padding-left: 0;
+}
+
+.account-details .nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: var(--brand-color);
+  background-color: transparent;
+  text-decoration: underline;
+}
+/* Account Details Page Ends Here */
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */

@@ -142,7 +142,7 @@
     padding: 2rem;
   }
   .subscribe-area .email-input {
-    width: auto !important;
+    width: 100% !important;
   }
 }
 
